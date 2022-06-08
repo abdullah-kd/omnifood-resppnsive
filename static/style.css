@@ -880,9 +880,7 @@ MEADEA
   .header {
     position: relative;
   }
-  .header nav {
-    display: none;
-  }
+  
 
   .a-menu {
     font-size: 6rem;
@@ -897,8 +895,8 @@ MEADEA
   .menu-box {
     display: block;
   }
-
-  .header .header-navbar {
+   
+   .header-navbar {
     display: flex;
     position: absolute;
     top: 0;
@@ -910,15 +908,17 @@ MEADEA
     height: 100vh;
     align-items: center;
     justify-content: center;
+
+    
+    opacity: 0;
+  }
+  .open-nav .header-navbar{
+    opacity: 1;
   }
   .navbar-a {
     font-size: 3.2rem;
   }
-  .header .header-navbar ul {
-    display: flex;
-    flex-direction: column;
-    gap: 4.6rem;
-  }
+  
   .testmonaials-img {
     grid-template-columns: repeat(6, 1fr);
     padding: 0 2.8rem;
